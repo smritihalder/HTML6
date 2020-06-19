@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+<title>Smriti Fitness</title>
+</head>
+<body>
+<header class="text-gray-700 body-font">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+      <svg xmlns="data:image/jpeg;base64,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">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+      </svg>
+      <span class="ml-3 text-xl">Smriti-Fitness</span>
+    </a>
+    <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+      <a href="/"class="mr-5 hover:text-gray-900">Home</a>
+      <a href="/"class="mr-5 hover:text-gray-900">About</a>
+      <a href="/"class="mr-5 hover:text-gray-900">Services</a>
+      <a href="/"class="mr-5 hover:text-gray-900">Contact-Us</a>
+    </nav>
+    <button class="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0">Enroll-Now
+      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7"></path>
+      </svg>
+    </button>
+  </div>
+</header>
+<section class="text-gray-700 body-font">
+  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Ready to be Fit
+        <br class="hidden lg:inline-block">let's hit the gym
+      </h1>
+      <p class="mb-8 leading-relaxed">Feel younger, live longer. It's no slogan — these are actual benefits of regular exercise. People with high levels of physical fitness are at lower risk of dying from a variety of causes, according to a recent study published in the Journal of the American Medical Association.
+
+</p>
+      <div class="flex justify-center">
+        <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+        <button class="ml-4 inline-flex text-gray-700 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded text-lg">Button</button>
+      </div>
+    </div>
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+      <img class="object-cover object-center rounded" alt="hero" src="https://source.unsplash.com/720x600/?fitness,gym">
+
+    </div>
+  </div>
+</section>
+<section class="text-gray-700 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-20">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">The Lifelong Benefits of Exercise
+</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">The number one reason most people say they don't exercise is lack of time. If you find it difficult to fit extended periods of exercise into your schedule, keep in mind that short bouts of physical activity in 10-minute segments will nonetheless help you achieve health benefits. Advises Permuth-Levine, "Even in the absence of weight loss, relatively brief periods of exercise every day reduce the risk of cardiovascular disease."
+
+Set realistic goals and take small steps to fit more movement into your daily life, such as taking the stairs instead of the elevator and walking to the grocery store instead of driving. "The key is to start gradually and be prepared," says Permuth-Levine. "Have your shoes, pedometer, and music ready so you don't have any excuses."
+
+To help you stick with your new exercise habit, vary your routine, like swimming one day and walking the next. Get out and start a baseball or soccer game with your kids. Even if the weather doesn't cooperate, have a plan B — use an exercise bike in your home, scope out exercise equipment at a nearby community center, or consider joining a health club. The trick is to get to the point where you look at exercise like brushing your teeth and getting enough sleep — as essential to your well-being.
+
+.</p>
+    </div>
+    <div class="flex flex-wrap -m-4 text-center">
+      <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+        <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-indigo-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+            <path d="M8 17l4 4 4-4m-4-5v9"></path>
+            <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"></path>
+          </svg>
+          <h2 class="title-font font-medium text-3xl text-gray-900">2.7K</h2>
+          <p class="leading-relaxed">Downloads</p>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+        <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-indigo-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
+          </svg>
+          <h2 class="title-font font-medium text-3xl text-gray-900">1.3K</h2>
+          <p class="leading-relaxed">Users</p>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+        <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-indigo-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+            <path d="M3 18v-6a9 9 0 0118 0v6"></path>
+            <path d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z"></path>
+          </svg>
+          <h2 class="title-font font-medium text-3xl text-gray-900">74</h2>
+          <p class="leading-relaxed">Files</p>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+        <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-indigo-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          </svg>
+          <h2 class="title-font font-medium text-3xl text-gray-900">46</h2>
+          <p class="leading-relaxed">Places</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="text-gray-700 body-font">
+  <div class="container px-5 py-24 mx-auto flex flex-wrap">
+    <div class="flex flex-wrap w-full">
+      <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
+        <div class="flex relative pb-12">
+          <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+          </div>
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-orange-500 inline-flex items-center justify-center text-white relative z-10">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <div class="flex-grow pl-4">
+            <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">STEP 1</h2>
+            <p class="leading-relaxed">Exercise at moderate intensity for at least 2 hours and 30 minutes spread over the course of each week</p>
+          </div>
+        </div>
+        <div class="flex relative pb-12">
+          <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+          </div>
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-orange-500 inline-flex items-center justify-center text-white relative z-10">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+            </svg>
+          </div>
+          <div class="flex-grow pl-4">
+            <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">STEP 2</h2>
+            <p class="leading-relaxed">Avoid periods of inactivity; some exercise at any level of intensity is better than none.
+</p>
+          </div>
+        </div>
+        <div class="flex relative pb-12">
+          <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+          </div>
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-orange-500 inline-flex items-center justify-center text-white relative z-10">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <circle cx="12" cy="5" r="3"></circle>
+              <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
+            </svg>
+          </div>
+          <div class="flex-grow pl-4">
+            <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">STEP 3</h2>
+            <p class="leading-relaxed">At least twice a week, supplement aerobic exercise (cardio) with weight-bearing activities that strengthen all major muscle groups </p>
+          </div>
+        </div>
+        <div class="flex relative pb-12">
+          <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+          </div>
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-orange-500 inline-flex items-center justify-center text-white relative z-10">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </div>
+          <div class="flex-grow pl-4">
+            <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">STEP 4</h2>
+            <p class="leading-relaxed">At least twice a week, supplement aerobic exercise (cardio) with weight-bearing activities that strengthen all major muscle groups.</p>
+          </div>
+        </div>
+        <div class="flex relative">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-orange-500 inline-flex items-center justify-center text-white relative z-10">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+              <path d="M22 4L12 14.01l-3-3"></path>
+            </svg>
+          </div>
+          <div class="flex-grow pl-4">
+            <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">FINISH</h2>
+            <p class="leading-relaxed">New Research Suggests Physical Activity Later in Life May Help Preserve Thinking</p>
+          </div>
+        </div>
+      </div>
+      <img class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12" src="https://source.unsplash.com/200x200/?heart "
+alt="step">
+    </div>
+  </div>
+</section>
+<section class="text-gray-700 body-font">
+  <div class="container px-5 py-24 mx-auto flex flex-wrap">
+    <div class="flex w-full mb-20 flex-wrap">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">Master Cleanse Reliac Heirloom</h1>
+      <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.</p>
+    </div>
+    <div class="flex flex-wrap md:-m-2 -m-1">
+      <div class="flex flex-wrap w-1/2">
+        <div class="md:p-2 p-1 w-1/2">
+          <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://source.unsplash.com/500x300/?gym,fitness">
+
+        </div>
+        <div class="md:p-2 p-1 w-1/2">
+          <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://source.unsplash.com/501x301/?gym,fitness">
+
+        </div>
+        <div class="md:p-2 p-1 w-full">
+          <img alt="gallery" class="w-full h-full object-cover object-center block" src="https://source.unsplash.com/601x301/?gym,fitness">
+
+        </div>
+      </div>
+      <div class="flex flex-wrap w-1/2">
+        <div class="md:p-2 p-1 w-full">
+          <img alt="gallery" class="w-full h-full object-cover object-center block" src="https://source.unsplash.com/600x360/?gym,fitness">
+
+        </div>
+        <div class="md:p-2 p-1 w-1/2">
+          <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://source.unsplash.com/502x302/?gym,fitness">
+
+        </div>
+        <div class="md:p-2 p-1 w-1/2">
+          <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://source.unsplash.com/501x301/?gym,fitness">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="text-gray-700 body-font relative">
+  <div class="container px-5 py-24 mx-auto flex sm:flex-no-wrap flex-wrap">
+    <div class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+      <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed" style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
+      <div class="bg-white relative flex flex-wrap py-6">
+        <div class="lg:w-1/2 px-6">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm">ADDRESS</h2>
+          <p class="leading-relaxed">Bagula [uratan para,Bagula,Nadia,WestBengal.</p>
+        </div>
+        <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm">EMAIL</h2>
+          <a class="text-orange-500 leading-relaxed">smritihaldar000@gmail.com</a>
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mt-4">PHONE</h2>
+          <p class="leading-relaxed">9609993261</p>
+        </div>
+      </div>
+    </div>
+    <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+      <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Feedback</h2>
+      <p class="leading-relaxed mb-5 text-gray-600">Post-ironic portland shabby chic echo park, banjo fashion axe</p>
+      <input class="bg-white rounded border border-gray-400 focus:outline-none focus:border-orange-500 text-base px-4 py-2 mb-4" placeholder="Name" type="text">
+      <input class="bg-white rounded border border-gray-400 focus:outline-none focus:border-orange-500 text-base px-4 py-2 mb-4" placeholder="Email" type="email">
+      <textarea class="bg-white rounded border border-gray-400 focus:outline-none h-32 focus:border-orange-500 text-base px-4 py-2 mb-4 resize-none" placeholder="Message"></textarea>
+      <button class="text-white bg-orange-500 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded text-lg">Button</button>
+      <p class="text-xs text-gray-500 mt-3">Chicharrones blog helvetica normcore iceland tousled brook viral artisan.</p>
+    </div>
+  </div>
+</section>
+</body>
+</html>
